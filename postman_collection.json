@@ -1,0 +1,47 @@
+{
+  "info": {
+    "name": "TDBITS Order Execution Engine",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Execute Market Order (POST)",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "url": {
+          "raw": "{{BASE_URL}}/api/orders/execute",
+          "host": ["{{BASE_URL}}"],
+          "path": ["api", "orders", "execute"]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"tokenIn\": \"SOL\",\n  \"tokenOut\": \"USDC\",\n  \"amount\": 10,\n  \"slippageBps\": 50\n}"
+        }
+      }
+    },
+    {
+      "name": "Connect WebSocket (GET Upgrade)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "ws://{{HOST}}/api/orders/execute?orderId={{ORDER_ID}}",
+          "protocol": "ws",
+          "host": ["{{HOST}}"],
+          "path": ["api", "orders", "execute"],
+          "query": [{ "key": "orderId", "value": "{{ORDER_ID}}" }]
+        },
+        "description": "Use a WebSocket-capable client. First call POST to obtain { orderId, wsUrl }, then connect to wsUrl via GET Upgrade."
+      }
+    }
+  ],
+  "variable": [
+    { "key": "BASE_URL", "value": "http://localhost:3000" },
+    { "key": "HOST", "value": "localhost:3000" },
+    { "key": "ORDER_ID", "value": "" }
+  ]
+}
+
