@@ -157,7 +157,7 @@ Tests validate:
 
 ## Deployment
 
-This service can be deployed on platforms such as **Railway**, **Render**, or **Fly.io**.
+This service has been deployed on **Render**
 
 General steps:
 1. Provision Redis and PostgreSQL
@@ -165,17 +165,13 @@ General steps:
 3. Run `npm install`
 4. Start with `npm start`
 
-Free-tier resources are sufficient for demonstration purposes.
+
 
 ---
 
 ## Demo
 
-Record a 1–2 minute demo showing:
-- Multiple orders submitted concurrently
-- WebSocket lifecycle streaming
-- Routing decisions in logs
-- Queue-based concurrent execution
+LINK TO DEMO VIDEO: 
 
 ---
 
