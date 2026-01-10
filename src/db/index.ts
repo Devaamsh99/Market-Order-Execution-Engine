@@ -1,5 +1,5 @@
 import { Pool } from 'pg';
-import { newDb } from 'pg-mem';
+const { newDb } = require('pg-mem');
 import type { Db, DexName, Order, OrderFinalRecord } from '../types';
 
 export const createSchemaSql = `
