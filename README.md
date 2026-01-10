@@ -3,6 +3,7 @@
 A robust **Market Order Execution Engine** implemented in **TypeScript** using **Fastify**, **BullMQ**, **Redis**, and **PostgreSQL**.  
 This project simulates order routing between two mock DEX venues (Raydium and Meteora) with real-time lifecycle events streamed over WebSockets.
 
+LINK TO PUBLIC DEPLOYMENT: https://market-order-execution-engine.onrender.com/
 ---
 
 ## Table of Contents
