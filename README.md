@@ -24,7 +24,7 @@ graph TD
   Client -->|POST_execute| Api
   Api -->|writeActiveOrder+events| Redis
   Api -->|enqueueJob| BullMQ
-  Client -->|WS_connect(orderId)| Ws
+  Client -->|"WS_connect(orderId)"| Ws
   Ws -->|subscribe(orderId)| EventBus
   Worker -->|processJob| BullMQ
   Worker -->|publishLifecycle| EventBus
