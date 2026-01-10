@@ -11,8 +11,8 @@
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "declaration": false,
-    "sourceMap": true
-    "types":["node"]
+    "sourceMap": true,
+    "types": ["node"]
   },
   "include": ["src/**/*.ts"],
   "exclude": [
@@ -20,6 +20,5 @@
     "dist",
     "src/tests/**",
     "src/client/**"
-   ]
+  ]
 }
-
