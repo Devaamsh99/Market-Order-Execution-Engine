@@ -1,4 +1,5 @@
 import { Pool } from 'pg';
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const { newDb } = require('pg-mem');
 import type { Db, DexName, Order, OrderFinalRecord } from '../types';
 
