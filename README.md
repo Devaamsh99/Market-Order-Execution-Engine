@@ -4,6 +4,9 @@ A robust **Market Order Execution Engine** implemented in **TypeScript** using *
 This project simulates order routing between two mock DEX venues (Raydium and Meteora) with real-time lifecycle events streamed over WebSockets.
 
 LINK TO PUBLIC DEPLOYMENT: https://market-order-execution-engine.onrender.com/
+
+[Note: This service is API-first and does not expose a root / route.
+Use POST /api/orders/execute to submit orders.]
 ---
 
 ## Table of Contents
