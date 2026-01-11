@@ -174,7 +174,7 @@ General steps:
 
 ## Demo
 
-LINK TO DEMO VIDEO: 
+LINK TO DEMO VIDEO: https://youtu.be/BfoD0o4ND_s?si=cVYRDXFRgdKRRJOo
 
 ---
 
