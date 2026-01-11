@@ -5,8 +5,8 @@ This project simulates order routing between two mock DEX venues (Raydium and Me
 
 LINK TO PUBLIC DEPLOYMENT: https://market-order-execution-engine.onrender.com/
 
-[Note: This service is API-first and does not expose a root / route.
-Use POST /api/orders/execute to submit orders.]
+[Note: This is an API-first service. The root / endpoint returns basic service metadata.
+Use POST /api/orders/execute to submit orders and WebSocket for lifecycle updates.]
 ---
 
 ## Table of Contents
