@@ -36,6 +36,16 @@ export async function buildServer(deps: ServerDeps): Promise<FastifyInstance> {
     return { status: 'ok' };
   });
 
+  app.get('/', async () => {
+    return {
+      service: 'market-order-execution-engine',
+      status: 'ok',
+      docs: 'POST /api/orders/execute',
+      health: '/health'
+     };
+  });
+
+
   await deps.db.initSchema();
 
   await app.register(createOrdersApi(deps), {});
