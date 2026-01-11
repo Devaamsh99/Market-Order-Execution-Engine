@@ -31,6 +31,10 @@ export interface ServerDeps {
 export async function buildServer(deps: ServerDeps): Promise<FastifyInstance> {
   const app = Fastify({ logger: false });
   await app.register(websocket);
+    
+  app.get('/health', async () => {
+    return { status: 'ok' };
+  });
 
   await deps.db.initSchema();
 
